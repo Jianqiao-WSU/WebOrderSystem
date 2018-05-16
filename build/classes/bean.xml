@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl"/>
+        <property name="username" value="reaper"/>
+        <property name="password" value="970927"/>
+    </bean>
+</beans> 
+
+    <!-- 将PersonService类部署成Spring容器中的Bean  -->  
+    <!--<bean id="personService" class="dao.PersonService">  
+        <property name="name" value="wawa"/>  
+    </bean>  
+    
+    <bean id="loginService" class="dao.LoginService">  
+        <property name="name" value="123"/> 
+    </bean>  -->
